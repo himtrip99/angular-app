@@ -25,4 +25,9 @@ public class GreetingController {
 	public Greeting welcome(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(welcome, name));
 	}
+
+	@GetMapping("/messages")
+	public String getMessage() {
+		return "Hello from Docker!";
+	}
 }
