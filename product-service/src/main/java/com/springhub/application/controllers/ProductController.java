@@ -1,11 +1,9 @@
 package com.springhub.application.controllers;
 
-import java.util.concurrent.atomic.AtomicLong;
-
-import com.springhub.application.entities.Greeting;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class ProductController {

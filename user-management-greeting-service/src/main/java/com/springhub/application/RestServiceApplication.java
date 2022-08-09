@@ -18,7 +18,7 @@ public class RestServiceApplication {
     @Bean
     CommandLineRunner init(UserRepository userRepository) {
         return args -> {
-            Stream.of("Hims", "Nans", "Raj", "Shiv", "Kab").forEach(name -> {
+            Stream.of("Jack", "Mike", "Henry", "Tom", "Harry").forEach(name -> {
                 User user = new User(name, name.toLowerCase() + "@domain.com");
                 userRepository.save(user);
             });
